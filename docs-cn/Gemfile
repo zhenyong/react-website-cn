@@ -10,6 +10,7 @@ gem 'jekyll', '~>3.1'
 gem 'jekyll-redirect-from'
 gem 'jekyll-paginate'
 
+
 # JSON
 gem 'json'
 
@@ -27,3 +28,7 @@ gem 'pygments.rb'
 
 # Avoid having to poll for changes on Windows
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+##>>>
+# gem 'jekyll-multiple-languages'
+##<<<

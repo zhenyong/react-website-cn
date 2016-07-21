@@ -28,7 +28,7 @@ id: home
 <section class="home-section">
   <div id="examples">
     <div class="example">
-      <h3>一个简单组件</h3>
+      <h3>简单组件</h3>
       <p>
         React 的组件实现了一个 `render()` 方法，接收数据参数，返回展示的内容。
         这个例子使用类似 XML 的一种语法，叫做 JSX。传送给组件的数据可以在 `render()`
@@ -41,32 +41,29 @@ id: home
       <div id="helloExample"></div>
     </div>
     <div class="example">
-      <h3>A Stateful Component</h3>
+      <h3>有状态的组件</h3>
       <p>
-        In addition to taking input data (accessed via `this.props`), a
-        component can maintain internal state data (accessed via `this.state`).
-        When a component's state data changes, the rendered markup will be
-        updated by re-invoking `render()`.
+        除了能拿到传入的数据 （通过访问 `this.props`），
+        组件还能维护内部的状态数据（通过访问 `this.state`）。
+        当一个组件的状态数据发生变化，会再次调用 `render()` 方法，
+        更新展示的内容。
       </p>
       <div id="timerExample"></div>
     </div>
     <div class="example">
-      <h3>An Application</h3>
+      <h3>应用程序</h3>
       <p>
-        Using `props` and `state`, we can put together a small Todo application.
-        This example uses `state` to track the current list of items as well as
-        the text that the user has entered. Although event handlers appear to be
-        rendered inline, they will be collected and implemented using event
-        delegation.
+        结合使用 `props` 和 `state` 创建一个小的 TODO 应用。
+        这个例子使用 `state` 来跟踪最新的列表项，以及用户最近输入的文字。
+        虽然事件处理器看上去是内嵌在渲染内容里，不过这些事件会被收集起来，然后通过事件代理实现。
       </p>
       <div id="todoExample"></div>
     </div>
     <div class="example">
-      <h3>A Component Using External Plugins</h3>
+      <h3>组件使用第三方库</h3>
       <p>
-        React is flexible and provides hooks that allow you to interface with
-        other libraries and frameworks. This example uses **remarkable**, an
-        external Markdown library, to convert the textarea's value in real time.
+        React 提供灵活的钩子让你集成第三方库或者框架。这个例子使用 **remarkable**，
+        一个第三方 Markdown 库，用来实时转换 textarea 的内容。
       </p>
       <div id="markdownExample"></div>
     </div>
@@ -80,7 +77,7 @@ id: home
 <hr class="home-divider" />
 <section class="home-bottom-section">
   <div class="buttons-unit">
-    <a href="docs/getting-started.html" class="button">Get Started</a>
-    <a href="downloads.html" class="button">Download React v{{site.react_version}}</a>
+    <a href="docs/getting-started.html" class="button">入门起步</a>
+    <a href="downloads.html" class="button">下载 React v{{site.react_version}}</a>
   </div>
 </section>
