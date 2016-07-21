@@ -1,0 +1,1329 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"g",
+				"good"
+			],
+			[
+				"t",
+				"tail"
+			],
+			[
+				"cach",
+				"cacheLink"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"ta",
+				"targetName"
+			],
+			[
+				"Ass",
+				"asset_dir"
+			],
+			[
+				"fil",
+				"filename"
+			],
+			[
+				"tas",
+				"tasks"
+			],
+			[
+				"link",
+				"linkName"
+			],
+			[
+				"oldP",
+				"oldPosts"
+			],
+			[
+				"st",
+				"stringify"
+			],
+			[
+				"ret",
+				"retArr"
+			],
+			[
+				"le",
+				"level"
+			],
+			[
+				"pre",
+				"preA"
+			],
+			[
+				"r",
+				"remaining"
+			],
+			[
+				"e",
+				"expect"
+			],
+			[
+				"serv",
+				"serverStatic"
+			],
+			[
+				"re",
+				"req"
+			],
+			[
+				"send",
+				"send404"
+			],
+			[
+				"parse",
+				"parseInt"
+			],
+			[
+				"download",
+				"downloadMultiple"
+			],
+			[
+				"down",
+				"downloadMultiple"
+			],
+			[
+				"im",
+				"imgUrl"
+			],
+			[
+				"type",
+				"typeSelectEl"
+			],
+			[
+				"no",
+				"normalizePath"
+			],
+			[
+				"my",
+				"MyUtils"
+			],
+			[
+				"lang",
+				"langDefPathArr"
+			],
+			[
+				"html",
+				"htmlFilename"
+			],
+			[
+				"htmlFile",
+				"htmlFilename"
+			],
+			[
+				"out",
+				"outDir"
+			],
+			[
+				"path",
+				"pathUtil"
+			],
+			[
+				"pa",
+				"pathUtil"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"uti",
+				"pathUtil"
+			],
+			[
+				"whole",
+				"wholePathArr"
+			],
+			[
+				"src",
+				"srcArr"
+			],
+			[
+				"L",
+				"LAYER"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "sav",
+		"selected_items":
+		[
+			[
+				"sav",
+				"File: Save All"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"enab",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"dis",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"enable",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"remopa",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"disable",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"diable",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"disable li",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"disabl",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"disa",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"enabl",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"lin",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"subli",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"foramt",
+				"Format: Javascript"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
+				"pretty",
+				"HTMLPrettify"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"enableli",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instalp",
+				"Package Control: Install Package"
+			],
+			[
+				"vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"remop",
+				"Package Control: Remove Package"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"nex",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"FORAM",
+				"Format: Javascript"
+			],
+			[
+				"fro",
+				"Format: Javascript"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instalpa",
+				"Package Control: Install Package"
+			],
+			[
+				"expand",
+				"Hayaku: Expand abbreviation"
+			],
+			[
+				"exp",
+				"Hayaku: Expand abbreviation"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 345.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/zhenyong/codes/react-website-cn/docs-cn"
+	],
+	"file_history":
+	[
+		"/Users/zhenyong/codes/react-website-cn/docs-cn/index.md",
+		"/Users/zhenyong/codes/react-website-cn/docs-cn/_layouts/default.html",
+		"/Users/zhenyong/codes/react-website-cn/docs-cn/_config.yml",
+		"/Users/zhenyong/codes/react-website-cn/docs-cn/docs/04-multiple-components.md",
+		"/Users/zhenyong/codes/react-website-cn/docs-cn/react-website-cn.sublime-project",
+		"/Users/zhenyong/codes/react-website-cn/docs-cn/Rakefile",
+		"/Users/zhenyong/codes/react-website-cn/docs-cn/_js/live_editor.js",
+		"/Users/zhenyong/codes/react-website-cn/package.json",
+		"/Users/zhenyong/codes/react-website-cn/docs-cn/package.json",
+		"/Users/zhenyong/codes/react-website-cn/docs-cn/.babelrc",
+		"/Users/zhenyong/Desktop/ablog/source/_posts/folk-git-folder.md",
+		"/Users/zhenyong/Desktop/ablog/tail.md",
+		"/Users/zhenyong/codes/flow/website-cn/docs/ref/syntax.doc.js",
+		"/Users/zhenyong/codes/flow/website-cn/docs/ref/builtins.doc.js",
+		"/Users/zhenyong/codes/flow/website-cn/docs/ref/quickref.doc.js",
+		"/Users/zhenyong/codes/flow/website-cn/docs/five-simple-examples.doc.js",
+		"/Users/zhenyong/codes/flow/website-cn/_data/nav_docs.yml",
+		"/Users/zhenyong/codes/flow/website-cn/docs/02-advanced-configuration.md",
+		"/Users/zhenyong/codes/flow/website-cn/docs/02-new-project.md",
+		"/Users/zhenyong/codes/flow/website-cn/docs/02-troubleshooting.md",
+		"/Users/zhenyong/codes/flow/website-cn/docs/04-cli.md",
+		"/Users/zhenyong/codes/flow/website-cn/docs/02-running.md",
+		"/Users/zhenyong/codes/flow/website-cn/docs/02-third-party.md",
+		"/Users/zhenyong/codes/flow/website-cn/docs/01-type-annotations.md",
+		"/Users/zhenyong/codes/flow/website-cn/docs/02-existing.md",
+		"/Users/zhenyong/codes/flow/website-cn/docs/getting-started.doc.js",
+		"/Users/zhenyong/codes/flow/website-cn/docs/ref/classes.doc.js",
+		"/Users/zhenyong/codes/flow/website-cn/index.doc.js",
+		"/Users/zhenyong/.zshrc",
+		"/Users/zhenyong/codes/flow/website-cn/docs/flow-website-cn.sublime-project",
+		"/Users/zhenyong/codes/flow/website-cn/_includes/header.html",
+		"/Users/zhenyong/codes/flow/website-cn/_site/assets/default.css",
+		"/Users/zhenyong/codes/flow/website-cn/_site/index.html",
+		"/Users/zhenyong/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/zhenyong/codes/flow/website-cn/_plugins/jekyll_flowdoc.rb",
+		"/Users/zhenyong/Desktop/ablog/themes/icarus/languages/es.yml",
+		"/Users/zhenyong/Desktop/ablog/_config.yml",
+		"/Users/zhenyong/Desktop/ablog/test.js",
+		"/Users/zhenyong/Desktop/ablog/package.json",
+		"/Users/zhenyong/Desktop/ablog/public/2016/07/03/Vue-源码工具链介绍/index.html",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo-filter-file-link/index.js",
+		"/Users/zhenyong/Desktop/ablog/file-url.js.bak",
+		"/Users/zhenyong/Desktop/ablog/source/_posts/Vue-源码工具链介绍.md",
+		"/Users/zhenyong/Desktop/ablog/scripts/file-url.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/plugins/tag/asset_path.js",
+		"/Users/zhenyong/Desktop/ablog/all.json",
+		"/Users/zhenyong/Desktop/ablog/db.json",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/models/category.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/node_modules/hexo-util/lib/index.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/node_modules/hexo-util/lib/slugize.js",
+		"/Users/zhenyong/Desktop/ablog/source/_posts/Babel-in-Vue.md",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/plugins/renderer/json.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/plugins/tag/index.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/plugins/filter/before_post_render/index.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/plugins/filter/before_post_render/titlecase.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/node_modules/.bin/to-title-case",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/node_modules/titlecase/to-title-case.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/plugins/tag/asset_img.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/plugins/tag/asset_link.js",
+		"/Users/zhenyong/Desktop/ablog/exploration/post.json",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo-xx/package.json",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo-filter-file-link/package.json",
+		"/Users/zhenyong/Desktop/ablog/node_modules/bluebird/js/release/method.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/plugins/filter/index.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/models/post.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo-file-link/package.json",
+		"/Users/zhenyong/Desktop/ablog/linkpost.js.bak",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/plugins/filter/new_post_path.js",
+		"/Users/zhenyong/Desktop/ablog/scripts/linkpost.js",
+		"/Users/zhenyong/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/plugins/processor/post.js",
+		"/Users/zhenyong/Desktop/ablog/public/archives/index.html",
+		"/Users/zhenyong/Desktop/ablog/public/2016/07/06/Flow-in-Vue/index.html",
+		"/Users/zhenyong/Desktop/ablog/exploration/note.md",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/extend/tag.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/hexo/index.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/hexo/post.js",
+		"/Users/zhenyong/Desktop/ablog/scripts/linkpost.js.bak",
+		"/Users/zhenyong/Desktop/ablog/scripts/auto-open-editor.js",
+		"/Users/zhenyong/Desktop/ablog/scripts/lisence.js",
+		"/Users/zhenyong/Desktop/ablog/scripts/donate.js",
+		"/Users/zhenyong/Desktop/ablog/collect-links.json",
+		"/Users/zhenyong/Desktop/ablog/.baidu_links/db.json",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/plugins/console/deploy.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo-generator-baidu-sitemap/index.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/extend/deployer.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/node_modules/bluebird/js/browser/bluebird.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib/extend/index.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo-deployer-git/index.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo-deployer-baidu-links/node_modules/hexo-fs/node_modules/jscs/node_modules/lodash/internal/isIndex.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo-deployer-baidu-links/index.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo-deployer-baidu-links/package.json",
+		"/Users/zhenyong/Desktop/ablog/scripts/index.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo-deployer-baidu-links/lib/helpers.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo-deployer-baidu-links/lib/db.js",
+		"/Users/zhenyong/Desktop/ablog/scripts/hexo-submit-baidu-links.js",
+		"/Users/zhenyong/Desktop/ablog/node_modules/hexo/.jscsrc",
+		"/Users/zhenyong/codes/demo/index.html",
+		"/Users/zhenyong/codes/vue/.eslintrc",
+		"/Users/zhenyong/codes/vue/package.json",
+		"/Users/zhenyong/.gitignore_global",
+		"/Users/zhenyong/codes/vue/.editorconfig",
+		"/Users/zhenyong/codes/vue/src/core/vdom/create-element.js",
+		"/Users/zhenyong/codes/vue/src/core/instance/index.js",
+		"/Users/zhenyong/codes/vue/src/core/instance/render.js",
+		"/Users/zhenyong/codes/vue/src/core/vdom/helpers.js",
+		"/Users/zhenyong/codes/vue/src/server/render.js",
+		"/Users/zhenyong/codes/vue/src/core/instance/lifecycle.js",
+		"/Users/zhenyong/codes/vue/src/core/instance/state.js",
+		"/Users/zhenyong/codes/vue/src/core/instance/events.js",
+		"/Users/zhenyong/codes/vue/src/core/instance/init.js",
+		"/Users/zhenyong/codes/vue/src/core/global-api/index.js",
+		"/Users/zhenyong/codes/vue/src/core/global-api/mixin.js",
+		"/Users/zhenyong/codes/vue/src/core/index.js",
+		"/Users/zhenyong/codes/vue/src/core/observer/index.js",
+		"/Users/zhenyong/codes/vue/src/core/util/props.js",
+		"/Users/zhenyong/codes/vue/src/shared/util.js",
+		"/Users/zhenyong/codes/vue/src/core/util/index.js",
+		"/Users/zhenyong/codes/vue/src/core/instance/proxy.js",
+		"/Users/zhenyong/codes/vue/src/entries/web-runtime.js",
+		"/Users/zhenyong/codes/vue/src/entries/web-runtime-with-compiler.js",
+		"/Users/zhenyong/codes/vue/browser/build.js",
+		"/Users/zhenyong/codes/vue/src/platforms/web/compiler/index.js",
+		"/Users/zhenyong/codes/vue/src/entries/web-compiler.js",
+		"/Users/zhenyong/codes/vue/src/compiler/index.js",
+		"/Users/zhenyong/codes/vue/src/compiler/parser/index.js",
+		"/Users/zhenyong/codes/vue/src/compiler/error-detector.js",
+		"/Users/zhenyong/codes/vue/examples/commits/index.html"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"",
+			"/Users/zhenyong/codes/react-website-cn/docs-cn/_site",
+			"",
+			"下一步",
+			"",
+			"/Users/zhenyong/Desktop/ablog/themes/icarus",
+			"/Users/zhenyong/Desktop/ablog/ ",
+			"/Users/zhenyong/Desktop/ablog/node_modules/hexo",
+			"/Users/zhenyong/Desktop/ablog/node_modules/hexo/",
+			"/Users/zhenyong/Desktop/ablog/node_modules/hexo/lib",
+			"",
+			"/Users/zhenyong/Desktop/ablog/public",
+			"/Users/zhenyong/Desktop/ablog/node_modules/hexo",
+			"",
+			"/Users/zhenyong/Desktop/myblog/node_modules/hexo/lib/hexo",
+			"/Users/zhenyong/codes/vue/src",
+			"/Users/zhenyong/codes/vue/",
+			"/Users/zhenyong/codes/vue/src",
+			"/Users/zhenyong/codes/vue/",
+			"/Users/zhenyong/codes/vue/src/compiler",
+			"/Users/zhenyong/codes/vue",
+			"/Users/zhenyong/codes/vue/src",
+			"/Users/zhenyong/codes/vue/build",
+			"/Users/zhenyong/codes/vue/src",
+			"",
+			"/Users/zhenyong/codes/vue/src",
+			"",
+			"/Users/zhenyong/codes/vue/src",
+			"/Users/zhenyong/codes/vue",
+			"/Users/zhenyong/codes/vue/src",
+			"",
+			"/Users/zhenyong/codes/vue/src",
+			"",
+			"/Users/zhenyong/codes/vue/src",
+			"",
+			"/Users/zhenyong/codes/ext-6.0.1/classic",
+			"",
+			"/Users/zhenyong/codes/track-kit/src",
+			"",
+			"/Users/zhenyong/codes/ext-6.0.1/packages/core/src/class",
+			"/Users/zhenyong/codes/ext-6.0.1/packages/core",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"一个",
+			"minitext",
+			"Get Started",
+			"A JavaScript library for building user interface",
+			"facebook.github.io",
+			"A JavaScript library for building user interface",
+			"A JavaScript library for building user interfaces",
+			"A JAVASCRIPT LIBRARY FOR BUILDING USER INTERFACES",
+			"flow-bin",
+			"eslint-rules",
+			"(<",
+			"(<\n(<",
+			"(<",
+			"_js",
+			"live_editor.js",
+			"destination",
+			"_site",
+			"404.html",
+			"react/404.html",
+			"/react/404.html",
+			"https://facebook.github.io",
+			"url",
+			"\"/react/",
+			"_plugins",
+			"header_links",
+			"readlines",
+			"authors",
+			"Authors",
+			"\"/react/",
+			"react/css/syntax.css",
+			"            ,\nSyntax",
+			"react/css/syntax.css",
+			"zhenyong.github.io",
+			"https",
+			"Syntax",
+			"//",
+			":",
+			"//",
+			"Built-in Types",
+			"泛型",
+			"文档",
+			"查看",
+			"Quick Reference",
+			"RECENT RELEASES",
+			"This is a comment",
+			"\"",
+			"分析&解决",
+			"Advanced Configuration",
+			"开始一个新的 Flow 项目",
+			"Adding 类型注解",
+			"Using the CLI",
+			"Using",
+			"declare them in an interface file",
+			"Troubleshooting",
+			"Running Flow code",
+			".flowconfig",
+			"检测第三方模块相关代码",
+			"Checking third-party code",
+			"任何类型",
+			"首行",
+			"Type Annotations",
+			"接过",
+			"Running Flow on existing code",
+			"ELECTRON_MIRROR",
+			"类型",
+			"打印",
+			"Starting a new Flow project",
+			"USER GUIDE",
+			"试试",
+			"github",
+			"g'i't'hu'b",
+			".site/flow",
+			"/flow",
+			"search.png ",
+			"assets/search.png ",
+			"116982086@qq.com",
+			"ow can catch common bugs in JavaScript programs before they run, including:",
+			"blog",
+			"Blog ",
+			" Blog ",
+			"algolia-autocomplete",
+			"\\bSupport\\b",
+			"Support",
+			"Type Inference",
+			"Javascript",
+			"A static type checker for JavaScript",
+			"Flow uses type inference to find bugs e",
+			"type annotations",
+			"10",
+			"> ",
+			"Running Flow Code",
+			"Five simple examples",
+			"我们的项目得先添加 B",
+			"Next steps",
+			"getting-started",
+			"seguir",
+			"console.l",
+			"<li><a href=\"http://zhenyong.site/2016/07/03/EditorConfig-in-Vue/\">EditorConfig</a></li>\n<li><a href=\"http://zhenyong.site/2016/07/04/Babel-in-Vue/\">Babel</a></li>\n<li><a href=\"http://zhenyong.site/2016/07/05/ESLint-in-Vue/\">ESLint</a></li>\n<li><a href=\"http://zhenyong.site/2016/07/06/Flow-in-Vue/\">Flow</a>",
+			"flow-in-vue",
+			"http",
+			"// con",
+			"processContent",
+			"console.log",
+			"push",
+			"_asyncHolder",
+			"EditorConfig",
+			"console.log",
+			"slugize =",
+			"slugize:",
+			"slugize",
+			"slug",
+			"ciqkmaapw00005gtg6euqgofi",
+			"ciqkmaaqg000a5gtgfhllahul",
+			"Flow-in-vue",
+			"PostAsset",
+			"asset_path",
+			"titlecase",
+			"CASE",
+			"link",
+			"getFileName",
+			"cacheLink",
+			"flush",
+			"asset_img",
+			"asset_path",
+			"slug",
+			"Flow",
+			"/Flow",
+			"getFileName"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"内置的类型",
+			"快速参考",
+			"干掉错误",
+			"高级配置",
+			"命令行工具",
+			"分析&解决",
+			"运行 Flow 代码",
+			"检测第三方模块调用代码",
+			"检测第三方模块相关代码",
+			"类型注解",
+			"在已有的代码上跑 Flow",
+			"开始一个新的 Flow 项目",
+			"五个简单例子",
+			"下一步",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 76.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 169.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/node.sublime-build",
+	"project": "react-website-cn.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"04-multiple-components",
+				"docs/04-multiple-components.md"
+			],
+			[
+				"index",
+				"index.md"
+			],
+			[
+				"live_editor.js",
+				"_js/live_editor.js"
+			],
+			[
+				"tail",
+				"tail.md"
+			],
+			[
+				"syn",
+				"docs/ref/syntax.doc.js"
+			],
+			[
+				"quicre",
+				"docs/ref/quickref.doc.js"
+			],
+			[
+				"five",
+				"docs/five-simple-examples.doc.js"
+			],
+			[
+				"quickref.doc.js",
+				"docs/ref/quickref.doc.js"
+			],
+			[
+				"advancon",
+				"docs/02-advanced-configuration.md"
+			],
+			[
+				"advan",
+				"docs/02-advanced-configuration.md"
+			],
+			[
+				"troubl",
+				"docs/02-troubleshooting.md"
+			],
+			[
+				"exisn",
+				"docs/02-existing.md"
+			],
+			[
+				"defacss",
+				"_site/assets/default.css"
+			],
+			[
+				"navy",
+				"_data/nav_docs.yml"
+			],
+			[
+				"index.html",
+				"_site/index.html"
+			],
+			[
+				"je",
+				"_plugins/jekyll_flowdoc.rb"
+			],
+			[
+				"nav",
+				"_data/nav_docs.yml"
+			],
+			[
+				"public/2016/vuein",
+				"public/2016/07/03/Vue-源码工具链介绍/index.html"
+			],
+			[
+				"fil",
+				"file-url.js.bak"
+			],
+			[
+				"vue",
+				"source/_posts/Vue-源码工具链介绍.md"
+			],
+			[
+				"slugi",
+				"node_modules/hexo/node_modules/hexo-util/lib/slugize.js"
+			],
+			[
+				"hexo-util/index",
+				"node_modules/hexo/node_modules/hexo-util/lib/index.js"
+			],
+			[
+				"json",
+				"node_modules/hexo/lib/plugins/renderer/json.js"
+			],
+			[
+				"db.j",
+				"db.json"
+			],
+			[
+				"all.js",
+				"all.json"
+			],
+			[
+				"asset_path",
+				"node_modules/hexo/lib/plugins/tag/asset_path.js"
+			],
+			[
+				"to-title",
+				"node_modules/hexo/node_modules/titlecase/to-title-case.js"
+			],
+			[
+				"totitlecase",
+				"node_modules/hexo/node_modules/.bin/to-title-case"
+			],
+			[
+				"titlecase",
+				"node_modules/hexo/node_modules/.bin/to-title-case"
+			],
+			[
+				"titlecase.js",
+				"node_modules/hexo/lib/plugins/filter/before_post_render/titlecase.js"
+			],
+			[
+				"confi",
+				"_config.yml"
+			],
+			[
+				"asset_img",
+				"node_modules/hexo/lib/plugins/tag/asset_img.js"
+			],
+			[
+				"assetlink",
+				"node_modules/hexo/lib/plugins/tag/asset_link.js"
+			],
+			[
+				"scripfil",
+				"scripts/file-url.js"
+			],
+			[
+				"new_post_path",
+				"node_modules/hexo/lib/plugins/filter/new_post_path.js"
+			],
+			[
+				"flowin",
+				"public/2016/07/06/Flow-in-Vue/index.html"
+			],
+			[
+				"coll",
+				"collect-links.json"
+			],
+			[
+				"blu",
+				"node_modules/hexo/node_modules/bluebird/js/browser/bluebird.js"
+			],
+			[
+				"dploygiinde",
+				"node_modules/hexo-deployer-git/index.js"
+			],
+			[
+				"baidu/index.js",
+				"node_modules/hexo-generator-baidu-sitemap/index.js"
+			],
+			[
+				"baidusiinde",
+				"node_modules/hexo-deployer-baidu-links/node_modules/hexo-fs/node_modules/jscs/node_modules/lodash/internal/isIndex.js"
+			],
+			[
+				"hexogitindex.js",
+				"node_modules/hexo-deployer-git/index.js"
+			],
+			[
+				"hegiin.j",
+				"node_modules/hexo-generator-index/index.js"
+			],
+			[
+				"vdomhel",
+				"src/core/vdom/helpers.js"
+			],
+			[
+				"create-element",
+				"src/core/vdom/create-element.js"
+			],
+			[
+				"web-runtime-with-compiler.js",
+				"src/entries/web-runtime-with-compiler.js"
+			],
+			[
+				"buildj",
+				"browser/build.js"
+			],
+			[
+				"comind",
+				"examples/commits/index.html"
+			],
+			[
+				"helper",
+				"src/compiler/helpers.js"
+			],
+			[
+				"modustyl",
+				"src/platforms/web/compiler/modules/style.js"
+			],
+			[
+				"divue",
+				"dist/vue.js"
+			],
+			[
+				"grid",
+				"examples/grid/grid.js"
+			],
+			[
+				"codegen",
+				"src/compiler/codegen.js"
+			],
+			[
+				"compiler/index.js",
+				"src/compiler/index.js"
+			],
+			[
+				"web/compiler/index",
+				"src/platforms/web/compiler/index.js"
+			],
+			[
+				"runticompil",
+				"src/entries/web-runtime-with-compiler.js"
+			],
+			[
+				"decode",
+				"src/compiler/parser/entity-decoder.js"
+			],
+			[
+				"commihtml",
+				"examples/commits/index.html"
+			],
+			[
+				"distvu",
+				"dist/vue.js"
+			],
+			[
+				"compiler/index",
+				"src/compiler/index.js"
+			],
+			[
+				"util/index",
+				"src/core/util/index.js"
+			],
+			[
+				"shauti",
+				"src/shared/util.js"
+			],
+			[
+				"sharedu",
+				"src/shared/util.js"
+			],
+			[
+				"modules/index",
+				"src/core/vdom/modules/index.js"
+			],
+			[
+				"shautil",
+				"src/shared/util.js"
+			],
+			[
+				"web/compiler/index.js",
+				"src/platforms/web/compiler/index.js"
+			],
+			[
+				"eb/compiler/inde",
+				"src/platforms/web/compiler/index.js"
+			],
+			[
+				"shaut",
+				"src/shared/util.js"
+			],
+			[
+				"util",
+				"build/utils.js"
+			],
+			[
+				"dep",
+				"src/observer/dep.js"
+			],
+			[
+				"diretran",
+				"src/directives/transition.js"
+			],
+			[
+				"templ",
+				"src/parsers/template.js"
+			],
+			[
+				"direhtml.js",
+				"src/directives/html.js"
+			],
+			[
+				"direhtml",
+				"coverage/PhantomJS 2.1.1 (Mac OS X 0.0.0)/lcov-report/src/directive.js.html"
+			],
+			[
+				"compile",
+				"src/compiler/compile.js"
+			],
+			[
+				"directive/attr",
+				"src/directives/attr.js"
+			],
+			[
+				"direpe",
+				"src/directives/repeat.js"
+			],
+			[
+				"direc",
+				"src/directive.js"
+			],
+			[
+				"filter",
+				"src/util/filter.js"
+			],
+			[
+				"watch",
+				"src/watcher.js"
+			],
+			[
+				"dispe",
+				"test/unit/specs/directive_spec.js"
+			],
+			[
+				"parpa",
+				"src/parse/path.js"
+			],
+			[
+				"arra",
+				"src/observe/array-augmentations.js"
+			],
+			[
+				"ut",
+				"src/util/index.js"
+			],
+			[
+				"uti",
+				"src/util/index.js"
+			],
+			[
+				"repea",
+				"src/directives/repeat.js"
+			],
+			[
+				"parte",
+				"src/parse/text.js"
+			],
+			[
+				"text.js",
+				"src/parse/text.js"
+			],
+			[
+				"obser",
+				"benchmarks/observer.js"
+			],
+			[
+				"wat",
+				"src/watcher.js"
+			],
+			[
+				"data.js",
+				"src/api/data.js"
+			],
+			[
+				"grun",
+				"gruntfile.js"
+			],
+			[
+				"observe",
+				"src/observer/observer.js"
+			],
+			[
+				"component.js",
+				"tasks/component.js"
+			],
+			[
+				"compo",
+				"test/functional/fixtures/component.html"
+			],
+			[
+				"simple",
+				"test/functional/fixtures/simple-dir.html"
+			],
+			[
+				"diind",
+				"src/directives/index.js"
+			],
+			[
+				"with.js",
+				"src/directives/with.js"
+			],
+			[
+				"compi",
+				"src/compiler.js"
+			],
+			[
+				"vue.js",
+				"dist/vue.js"
+			],
+			[
+				"with",
+				"src/directives/with.js"
+			],
+			[
+				"diindex",
+				"src/directives/index.js"
+			],
+			[
+				"dire",
+				"src/directive.js"
+			],
+			[
+				"direind.js",
+				"src/directives/index.js"
+			],
+			[
+				"contenthtml",
+				"coverage/PhantomJS 2.1.1 (Mac OS X)/lcov-report/test/index.html"
+			],
+			[
+				"vie",
+				"src/viewmodel.js"
+			],
+			[
+				"bindin",
+				"src/binding.js"
+			],
+			[
+				"vi",
+				"src/viewmodel.js"
+			],
+			[
+				"emi",
+				"src/emitter.js"
+			],
+			[
+				"depar",
+				"src/deps-parser.js"
+			],
+			[
+				"viewm",
+				"src/viewmodel.js"
+			],
+			[
+				"di",
+				"src/directive.js"
+			],
+			[
+				"compil",
+				"src/compiler.js"
+			],
+			[
+				"viem",
+				"src/viewmodel.js"
+			],
+			[
+				"todo",
+				"examples/todomvc/index.html"
+			],
+			[
+				"bin",
+				"src/binding.js"
+			],
+			[
+				"npmig",
+				"node_modules/abbrev/.npmignore"
+			],
+			[
+				"path.js",
+				"src/parsers/path.js"
+			],
+			[
+				"path",
+				"src/parse/path.js"
+			],
+			[
+				"parse/path",
+				"src/parse/path.js"
+			],
+			[
+				"parsepath.",
+				"src/parse/path.js"
+			],
+			[
+				"if.js",
+				"src/directives/if.js"
+			],
+			[
+				"trans",
+				"src/compile/transclude.js"
+			],
+			[
+				"batch",
+				"src/batcher.js"
+			],
+			[
+				"tran",
+				"src/transition.js"
+			],
+			[
+				"viemo",
+				"src/viewmodel.js"
+			],
+			[
+				"fra",
+				"src/fragment.js"
+			],
+			[
+				"todohtml",
+				"examples/todomvc/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 309.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
