@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Getting Started
+title: 开始入门
 permalink: docs/getting-started.html
 next: tutorial.html
 redirect_from: "docs/index.html"
@@ -8,23 +8,25 @@ redirect_from: "docs/index.html"
 
 ## JSFiddle
 
-The easiest way to start hacking on React is using the following JSFiddle Hello World examples:
+用下面 JSFiddle 的 Hello World 例子，简单快速搞起 React
 
  * **[React JSFiddle](https://jsfiddle.net/reactjs/69z2wepo/)**
- * [React JSFiddle without JSX](https://jsfiddle.net/reactjs/5vjqabv3/)
+ * [React JSFiddle 不用 JSX](https://jsfiddle.net/reactjs/5vjqabv3/)
 
 
-## Starter Pack
+## 入门安利包
 
-If you're just getting started, you can download the starter kit. The starter kit includes prebuilt copies of React and React DOM for the browser, as well as a collection of usage examples to help you get started.
+如果你只是刚入门，可以下载入门工具包，里面包含了编译好的，用于浏览器的 React 和 React Dom 库，
+还有一些例子帮助你快速入门。
+
 
 <div class="buttons-unit downloads">
   <a href="/react/downloads/react-{{site.react_version}}.zip" class="button">
-    Download Starter Kit {{site.react_version}}
+    下载入门工具包 {{site.react_version}}
   </a>
 </div>
 
-In the root directory of the starter kit, create a `helloworld.html` with the following contents.
+在入门包的根目录创建 `helloworld.html` 文件，内容如下：
 
 ```html
 <!DOCTYPE html>
@@ -48,11 +50,16 @@ In the root directory of the starter kit, create a `helloworld.html` with the fo
 </html>
 ```
 
-The XML syntax inside of JavaScript is called JSX; check out the [JSX syntax](/react/docs/jsx-in-depth.html) to learn more about it. In order to translate it to vanilla JavaScript we use `<script type="text/babel">` and include Babel to actually perform the transformation in the browser. Open the html from a browser and you should already be able to see the greeting!
+在 JavaScript 中，插入跟 XML 类似的代码，这种语法称之为 JSX；
+查看 [JSX 语法](/react/docs/jsx-in-depth.html) 了解更多。
 
-### Separate File
+为了把它转化为普通的 JavaScript，我们用上 `<script type="text/babel">`，
+并且引入 Babel ，在浏览器运行时转换代码，然后在执行。
+通过浏览器打开这个 html 文件，你就可以看到 Hello world 啦！
 
-Your React JSX code can live in a separate file. Create the following `src/helloworld.js`.
+### 分离文件
+
+JSX 代码可以单独放在一个文件，创建 `src/helloworld.js`，内容如下：
 
 ```javascript
 ReactDOM.render(
@@ -61,20 +68,23 @@ ReactDOM.render(
 );
 ```
 
-Then reference it from `helloworld.html`:
+然后在 `helloworld.html` 中引用它
 
 ```html{10}
 <script type="text/babel" src="src/helloworld.js"></script>
 ```
 
-Note that some browsers (Chrome, e.g.) will fail to load the file unless it's served via HTTP.
+提醒：某些浏览器可能无法本地加载 js 文件，你就起个静态服务器呗
 
-## Using React with npm or Bower
+## 通过 npm 或者 Bower 来玩 React
 
-You can also use React with package managers like npm or Bower. You can learn more in our [Package Managers](/react/docs/package-management.html) section.
+你可以通过包管理器，像 npm 或者 Bower，来使用 React。
+在 [包管理器](/react/docs/package-management.html) 这章可以了解更多。
 
-## Next Steps
 
-Check out [the tutorial](/react/docs/tutorial.html) and the other examples in the starter kit's `examples` directory to learn more.
+## 下一步
 
-Good luck, and welcome!
+想学更多的话，可以查看 [教程](/react/docs/tutorial.html) 文档，
+以及入门工具包 `examples` 目录下的其他例子。
+
+祝你好运, 欢迎入坑！

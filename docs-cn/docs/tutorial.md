@@ -1,38 +1,48 @@
 ---
 id: tutorial
-title: Tutorial
+title: 教程
 permalink: docs/tutorial.html
 prev: getting-started.html
 next: thinking-in-react.html
 ---
 
-We'll be building a simple but realistic comments box that you can drop into a blog, a basic version of the realtime comments offered by Disqus, LiveFyre or Facebook comments.
+我们来一个简单又实用的评论框，然后可以放在你的博客，就像 Disqus, 
+ LiveFyre 或者 Facebook 评论那样，不过是一个基础版咯。
 
-We'll provide:
+需求就是:
 
-* A view of all of the comments
-* A form to submit a comment
-* Hooks for you to provide a custom backend
+* 显示所有评论的列表
+* 提交评论的表单
+* Hooks for you to provide a custom backend 
 
 It'll also have a few neat features:
 
-* **Optimistic commenting:** comments appear in the list before they're saved on the server so it feels fast.
-* **Live updates:** other users' comments are popped into the comment view in real time.
-* **Markdown formatting:** users can use Markdown to format their text.
+* **乐观地评论:**  评论在提交后立刻展现在列表中，对于评论是否成功地保存到服务器，我们很乐观，这样体验起来会爽一点。
+* **实时更新:** 其他用户的评论实时出现在评论界面
+* **支持 Markdown 格式:** 用户能用 markdown 语法来写评论
 
-### Want to skip all this and just see the source?
+### 想直接上代码？
 
-[It's all on GitHub.](https://github.com/reactjs/react-tutorial)
+[都在 GitHub 上](https://github.com/reactjs/react-tutorial)
 
-### Running a server
+### 启动一个服务器
 
-In order to start this tutorial, we're going to require a running server. This will serve purely as an API endpoint which we'll use for getting and saving data. In order to make this as easy as possible, we've created a simple server in a number of scripting languages that does exactly what we need it to do. **You can [view the source](https://github.com/reactjs/react-tutorial/) or [download a zip file](https://github.com/reactjs/react-tutorial/archive/master.zip) containing everything needed to get started.**
+这个教程需要一个服务器，提供纯 API 服务，用来获取和保存数据。
+为了方便，我们写好了一个简单够用的服务器，提供几种脚本语言版本。
+**你可以 [查看源码](https://github.com/reactjs/react-tutorial/) 或者 
+[下载 zip 包](https://github.com/reactjs/react-tutorial/archive/master.zip)
+**
 
-For sake of simplicity, the server we will run uses a `JSON` file as a database. You would not run this in production but it makes it easy to simulate what you might do when consuming an API. Once you [start the server](https://github.com/reactjs/react-tutorial/#to-use), it will support our API endpoint and it will also serve the static pages we need.
 
-### Getting started
+简单起见，服务器使用一个 `JSON` 文件作为数据库。
+这样方便我们模拟一个真实 API 服务，当然啦，生产环境不能这么干。
+一旦 [启动这个服务器](https://github.com/reactjs/react-tutorial/#to-use)，
+它就能支持 API 服务和静态页面访问。
 
-For this tutorial, we're going to make it as easy as possible. Included in the server package discussed above is an HTML file which we'll work in. Open up `public/index.html` in your favorite editor. It should look something like this:
+### 开始咯
+
+教程会很简单滴。刚才说的服务器包，里面有一个 `public/index.html` HTML 文件，我们先用它干活，
+用你喜欢的编辑器打开它，长这样:
 
 ```html
 <!-- index.html -->
@@ -58,15 +68,18 @@ For this tutorial, we're going to make it as easy as possible. Included in the s
 </html>
 ```
 
-For the remainder of this tutorial, we'll be writing our JavaScript code in this script tag. We don't have any advanced live-reloading so you'll need to refresh your browser to see updates after saving. Follow your progress by opening `http://localhost:3000` in your browser (after starting the server). When you load this for the first time without any changes, you'll see the finished product of what we're going to build. When you're ready to start working, just delete the preceding `<script>` tag and then you can continue.
+接下来的教程里，我们会在这个 script 标签内写代码。
+我们木有什么高级实时刷新工具，所以你得保存代码后手动刷新浏览器。
+启动服务器后，在浏览器打开 `http://localhost:3000`。
+如果你啥都没改的话，看到的就是我们最终想要完成的产品，现在就删除前一个 `<script ...example.js>` 标签，然后开始敲代码。
 
-> Note:
+> 注意:
 >
-> We included jQuery here because we want to simplify the code of our future ajax calls, but it's **NOT** mandatory for React to work.
+> 我们引入了 jQuery，只是为了简化 ajax 调用，**不是** React 必要的
 
-### Your first component
+### 第一个组件
 
-React is all about modular, composable components. For our comment box example, we'll have the following component structure:
+React 玩的就是模块化、可组合的组件。而我们的例子会采用下面这样的组件结构：
 
 ```
 - CommentBox
@@ -75,7 +88,7 @@ React is all about modular, composable components. For our comment box example, 
   - CommentForm
 ```
 
-Let's build the `CommentBox` component, which is just a simple `<div>`:
+先弄 `CommentBox` 组件，就是个简单的 `<div>`
 
 ```javascript
 // tutorial1.js
@@ -94,11 +107,13 @@ ReactDOM.render(
 );
 ```
 
-Note that native HTML element names start with a lowercase letter, while custom React class names begin with an uppercase letter.
+原生的 HTML 标签名字以小写字幕开头，而自定义的 React 类名以大写字母开头。
 
-#### JSX Syntax
+#### JSX 语法
 
-The first thing you'll notice is the XML-ish syntax in your JavaScript. We have a simple precompiler that translates the syntactic sugar to this plain JavaScript:
+首先注意到的就是 JavaScript 里边有像 XML 那样的代码。
+我们有一个简单的预编译器，可以把把这种语法糖转换成普通的 JavaScript 代码。
+
 
 ```javascript
 // tutorial1-raw.js
@@ -117,25 +132,37 @@ ReactDOM.render(
 );
 ```
 
-Its use is optional but we've found JSX syntax easier to use than plain JavaScript. Read more on the [JSX Syntax article](/react/docs/jsx-in-depth.html).
+Its use is optional but we've found JSX syntax easier to use than plain JavaScript.
+Read more on the [JSX Syntax article](/react/docs/jsx-in-depth.html).
+不一定要用 JSX，但是用它比起用普通的 JavaScript 要简单一点。
+参考 [JSX 语法](/react/docs/jsx-in-depth.html) 了解更多。
 
-#### What's going on
+#### 接下来干嘛咧
 
-We pass some methods in a JavaScript object to `React.createClass()` to create a new React component. The most important of these methods is called `render` which returns a tree of React components that will eventually render to HTML.
+我们给 `React.createClass()` 方法传入一个对象，包含一些方法，从而创建一个 React 组件。
+这些方法里，`render` 是最重要的，它返回一棵 React 组件树。
 
-The `<div>` tags are not actual DOM nodes; they are instantiations of React `div` components. You can think of these as markers or pieces of data that React knows how to handle. React is **safe**. We are not generating HTML strings so XSS protection is the default.
+这里的 `<div>` 标签并不是真正的 DOM 节点；他们表示 React 的 `div` 组件实例。
+你可以把它理解为标记或者数据，React 知道怎么处理它。
+React 是**安全的**。我们不生成 HTML 字符串，所以默认 XSS 安全没问题。
 
-You do not have to return basic HTML. You can return a tree of components that you (or someone else) built. This is what makes React **composable**: a key tenet of maintainable frontends.
+不一定要返回基本的 HTML，
+你可以返回一颗组建树，这些组件可以是你（或者别人）创建的。
+这使得 React **组件化**: 一个前端可维护性的原则
 
-`ReactDOM.render()` instantiates the root component, starts the framework, and injects the markup into a raw DOM element, provided as the second argument.
+`ReactDOM.render()` 实例化根组件, 启动框架。 
+第二个参数是一个原生 DOM 元素，React 会把这些标记注入到这个元素里。
 
-The `ReactDOM` module exposes DOM-specific methods, while `React` has the core tools shared by React on different platforms (e.g., [React Native](http://facebook.github.io/react-native/)).
+`ReactDOM` 模块暴露了一些 DOM 特定的方法。
+而 `React` 在不同平台上都有 React 团队分享的核心工具 (例如, [React Native](http://facebook.github.io/react-native/)).
 
-It is important that `ReactDOM.render` remain at the bottom of the script for this tutorial. `ReactDOM.render` should only be called after the composite components have been defined.
+`ReactDOM.render` 放在 script 最下面执行，这点很重要，
+因为 `ReactDOM.render` 必须在组合的组件定义完之后才能调用。
 
 ## Composing components
 
-Let's build skeletons for `CommentList` and `CommentForm` which will, again, be simple `<div>`s. Add these two components to your file, keeping the existing `CommentBox` declaration and `ReactDOM.render` call:
+创建 `CommentList` 和 `CommentForm` 的骨架，同样是一个简单的 `div` 啥的。
+把这两个组件添加到你的文件，保持原来的 `CommentBox` 定义和 `ReactDOM.render` 调用。
 
 ```javascript
 // tutorial2.js
@@ -160,7 +187,7 @@ var CommentForm = React.createClass({
 });
 ```
 
-Next, update the `CommentBox` component to use these new components:
+接着，修改 `CommentBox` 组件，在里边使用这些新组件
 
 ```javascript{6-8}
 // tutorial3.js
@@ -177,11 +204,17 @@ var CommentBox = React.createClass({
 });
 ```
 
-Notice how we're mixing HTML tags and components we've built. HTML components are regular React components, just like the ones you define, with one difference. The JSX compiler will automatically rewrite HTML tags to `React.createElement(tagName)` expressions and leave everything else alone. This is to prevent the pollution of the global namespace.
+注意到我们如何把组件和 HTML 标签弄一起的。
+HTML 组件是常规的 React 组件，和你定义的组件差不多，有一点不同：
+JSX 编译器会自动把 HTML 标签替换为 `React.createElement(标签名)` 表达式，其它不变。
+这是为了全局命名空间bei'wu'r
 
-### Using props
+### 使用 props
 
-Let's create the `Comment` component, which will depend on data passed in from its parent. Data passed in from a parent component is available as a 'property' on the child component. These 'properties' are accessed through `this.props`. Using props, we will be able to read the data passed to the `Comment` from the `CommentList`, and render some markup:
+Let's create the `Comment` component, which will depend on data passed in from its parent.
+ Data passed in from a parent component is available as a 'property' on the child component.
+  These 'properties' are accessed through `this.props`. 
+  Using props, we will be able to read the data passed to the `Comment` from the `CommentList`, and render some markup:
 
 ```javascript
 // tutorial4.js

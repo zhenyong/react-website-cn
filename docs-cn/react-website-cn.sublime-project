@@ -3,7 +3,7 @@
 	[
 		{
 			"path": ".",
-            "folder_exclude_patterns":["xreact"]
+            "folder_exclude_patterns":["react"]
 		}
 	]
 }
