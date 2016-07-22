@@ -38,3 +38,4 @@ jspm_packages
 
 .sass-cache
 docs-cn/react
+*.sublime-workspace

@@ -13,9 +13,9 @@ next: thinking-in-react.html
 
 * 显示所有评论的列表
 * 提交评论的表单
-* Hooks for you to provide a custom backend 
+* 提供自定义后台服务（都准备好，填坑就行） 
 
-It'll also have a few neat features:
+还有一些很酷的功能:
 
 * **乐观地评论:**  评论在提交后立刻展现在列表中，对于评论是否成功地保存到服务器，我们很乐观，这样体验起来会爽一点。
 * **实时更新:** 其他用户的评论实时出现在评论界面
@@ -207,14 +207,15 @@ var CommentBox = React.createClass({
 注意到我们如何把组件和 HTML 标签弄一起的。
 HTML 组件是常规的 React 组件，和你定义的组件差不多，有一点不同：
 JSX 编译器会自动把 HTML 标签替换为 `React.createElement(标签名)` 表达式，其它不变。
-这是为了全局命名空间bei'wu'r
+这是为了全局命名空间被污染。
 
 ### 使用 props
 
-Let's create the `Comment` component, which will depend on data passed in from its parent.
- Data passed in from a parent component is available as a 'property' on the child component.
-  These 'properties' are accessed through `this.props`. 
-  Using props, we will be able to read the data passed to the `Comment` from the `CommentList`, and render some markup:
+接着创建 `Comment` 组件，它依赖于父组件的数据。
+数据从父组件传入后，可以在子组件上像『属性』一样使用，这些『属性』通过 `this.props` 访问。
+通过 props，我们在 `Comment` 组件可以读取从 `CommentList` 传入的数据，
+然后渲染一些标记。
+
 
 ```javascript
 // tutorial4.js
@@ -232,11 +233,14 @@ var Comment = React.createClass({
 });
 ```
 
-By surrounding a JavaScript expression in braces inside JSX (as either an attribute or child), you can drop text or React components into the tree. We access named attributes passed to the component as keys on `this.props` and any nested elements as `this.props.children`.
+通过用大括号括号包住 JSX 中的 JS 表达式（作为属性或孩子），你可以把文本或 React 组件放到组件树中。
+把属性名作为 `this.props` 的 key 则可访问对应的属性值，通过 `this.props.children` 则可访问任意内嵌元素
 
-### Component Properties
+### 组件属性
 
-Now that we have defined the `Comment` component, we will want to pass it the author name and comment text. This allows us to reuse the same code for each unique comment. Now let's add some comments within our `CommentList`:
+我们已经定义好 `Comment` 组件，将来只需给它传入作者名称和评论内容，
+这也就让我们重用一个组件代码，构建不同的评论。
+现在就在 `CommentList` 内添加一些评论：
 
 ```javascript{6-7}
 // tutorial5.js
@@ -252,13 +256,18 @@ var CommentList = React.createClass({
 });
 ```
 
-Note that we have passed some data from the parent `CommentList` component to the child `Comment` components. For example, we passed *Pete Hunt* (via an attribute) and *This is one comment* (via an XML-like child node) to the first `Comment`. As noted above, the `Comment` component will access these 'properties' through `this.props.author`, and `this.props.children`.
+注意到，我们通过父组件 `CommentList` 传送一些数据到子组件 `Comment`。 
+例如, 传递 *Pete Hunt* (通过属性) 和 *This is one comment* (通过类似 XML 节点) 给第一个 `Comment`。 
+正如之前所说， `Comment` 组件将通过 `this.props.author` 和 `this.props.children` 访问这些『属性』。
 
-### Adding Markdown
+### 增加 Markdown
 
-Markdown is a simple way to format your text inline. For example, surrounding text with asterisks will make it emphasized.
+Markdown 一种格式化内联文本的简单方式。 
+例如，用星号包住文本让它变得强调突出。
 
-In this tutorial we use a third-party library **remarkable** which takes Markdown text and converts it to raw HTML. We already included this library with the original markup for the page, so we can just start using it. Let's convert the comment text to Markdown and output it:
+使用第三方库 **remarkable**，能把 Markdown 文本转化为纯 HTML 代码。
+我们已经在页面中引入了这个库，所以只管用就行。
+那么我们就把评论内容按照 Markdown 语法格式化，然后输出：
 
 ```javascript{4,10}
 // tutorial6.js
@@ -277,11 +286,18 @@ var Comment = React.createClass({
 });
 ```
 
-All we're doing here is calling the remarkable library. We need to convert `this.props.children` from React's wrapped text to a raw string that remarkable will understand so we explicitly call `toString()`.
+这里也就是调用一下 remarkable 库。
+All we're doing here is calling the remarkable library. 
 
-But there's a problem! Our rendered comments look like this in the browser: "`<p>`This is `<em>`another`</em>` comment`</p>`". We want those tags to actually render as HTML.
+我们显示调用 `toString()`，
+把 React 包裹的文本 `this.props.children` 转化为原生字符串，
+这样 remarkable 才能正确处理。
 
-That's React protecting you from an [XSS attack](https://en.wikipedia.org/wiki/Cross-site_scripting). There's a way to get around it but the framework warns you not to use it:
+但是，这里有个问题！显示在浏览器的评论长这样： "`<p>`This is `<em>`another`</em>` comment`</p>`"。 
+可是我们想让这些标签渲染成 HTML。
+
+其实这是因为 React 为了保护你，避免 [XSS 攻击](https://en.wikipedia.org/wiki/Cross-site_scripting)。 
+有一种方式可以搞掂，不过框架会警告提醒你慎用:
 
 ```javascript{3-7,15}
 // tutorial7.js
@@ -305,13 +321,15 @@ var Comment = React.createClass({
 });
 ```
 
-This is a special API that intentionally makes it difficult to insert raw HTML, but for remarkable we'll take advantage of this backdoor.
+这是个神奇的 API，故意让你难以插入原生 HTML，
+不过为了 remarkable，我们可以好好利用这个后门。
 
-**Remember:** by using this feature you're relying on remarkable to be secure. In this case, remarkable automatically strips HTML markup and insecure links from the output.
+**记住:** 使用了这个功能后，你的安全性就得看 remarkable 了。
 
-### Hook up the data model
+### 挂上数据模型
 
-So far we've been inserting the comments directly in the source code. Instead, let's render a blob of JSON data into the comment list. Eventually this will come from the server, but for now, write it in your source:
+目前我们已经是在代码里直接插入评论，换一种方式，让我们渲染一堆 JSON 数据到评论列表里。
+最终这堆数据会来自服务器，不过现在先直接写在代码里呗：
 
 ```javascript
 // tutorial8.js
@@ -321,7 +339,9 @@ var data = [
 ];
 ```
 
-We need to get this data into `CommentList` in a modular way. Modify `CommentBox` and the `ReactDOM.render()` call to pass this data into the `CommentList` via props:
+我们得把这份数据通过模块化的方式塞到 `CommentList` 里，
+修改 `CommentBox` 和 `ReactDOM.render()` 调用，通过 props 传递数据到 `CommentList`：
+
 
 ```javascript{7,15}
 // tutorial9.js
@@ -343,7 +363,7 @@ ReactDOM.render(
 );
 ```
 
-Now that the data is available in the `CommentList`, let's render the comments dynamically:
+现在 `CommentList` 就能使用这份数据, 我们动态的渲染这些评论吧:
 
 ```javascript{4-10,13}
 // tutorial10.js
@@ -365,11 +385,12 @@ var CommentList = React.createClass({
 });
 ```
 
-That's it!
+就酱紫!
 
-### Fetching from the server
+### 从后台获取数据
 
-Let's replace the hard-coded data with some dynamic data from the server. We will remove the data prop and replace it with a URL to fetch:
+我们把写死的数据替换为后台获取的动态数据吧，
+我们会把 data 属性移除，用一个 url 替换，用来获取数据。
 
 ```javascript{3}
 // tutorial11.js
@@ -379,17 +400,25 @@ ReactDOM.render(
 );
 ```
 
-This component is different from the prior components because it will have to re-render itself. The component won't have any data until the request from the server comes back, at which point the component may need to render some new comments.
+这个组件跟前面的组件有点不同，因为它必须得重新渲染。
+这个组件开始啥数据都没，等到请求从后台返回后才有数据，这时候组件就得渲染一些新的评论。
 
-Note: the code will not be working at this step.
+提醒: 到这一步代码还不能跑
 
 ### Reactive state
 
-So far, based on its props, each component has rendered itself once. `props` are immutable: they are passed from the parent and are "owned" by the parent. To implement interactions, we introduce mutable **state** to the component. `this.state` is private to the component and can be changed by calling `this.setState()`. When the state updates, the component re-renders itself.
+目前为止，基于自己的 props，每个组件已经渲染了一次，`props` 是不可变的：
+他们从父级传入，并且被父级所『拥有』。
+为了实现交互，我们给组件引入可变的 **state**，`this.state` 是组件私有的，
+可以通过调用 `this.setState()` 来改变，
+当 state 更新之后，组件就会重新渲染。
 
-`render()` methods are written declaratively as functions of `this.props` and `this.state`. The framework guarantees the UI is always consistent with the inputs.
 
-When the server fetches data, we will be changing the comment data we have. Let's add an array of comment data to the `CommentBox` component as its state:
+`render()` 是一个可以使用 `this.props` 和 `this.state` 的方法。
+框架会保证 UI 与输入总是一致的。
+
+当后台获取数据时，我们将改变已有的评论数据。
+我们给 `CommentBox` 增加一个评论数据数组，作为它的 state
 
 ```javascript{3-5,10}
 // tutorial12.js
@@ -409,10 +438,14 @@ var CommentBox = React.createClass({
 });
 ```
 
-`getInitialState()` executes exactly once during the lifecycle of the component and sets up the initial state of the component.
+`getInitialState()` 在组件生命周期间只执行一次，用来设置组件的初始 state
 
-#### Updating state
-When the component is first created, we want to GET some JSON from the server and update the state to reflect the latest data. We're going to use jQuery to make an asynchronous request to the server we started earlier to fetch the data we need. The data is already included in the server you started (based on the `comments.json` file), so once it's fetched, `this.state.data` will look something like this:
+#### 更新 state
+
+当组件首次创建时，我们要从后台获取一些 JSON 数据，然后更新 state 以反映最新的数据。
+我们打算用 jQuery 向之前启动的服务器发出异步请求，获取我们所需的数据。
+数据已经在你启动的服务器里了（基于 `comments.json` 文件），
+所以，一旦获取成功，`this.state.data` 就会长这样：
 
 ```json
 [
@@ -452,7 +485,11 @@ var CommentBox = React.createClass({
 });
 ```
 
-Here, `componentDidMount` is a method called automatically by React after a component is rendered for the first time. The key to dynamic updates is the call to `this.setState()`. We replace the old array of comments with the new one from the server and the UI automatically updates itself. Because of this reactivity, it is only a minor change to add live updates. We will use simple polling here but you could easily use WebSockets or other technologies.
+这里的 `componentDidMount` 方法在组件第一次渲染完之后，React 会自动调用它。
+调用 `this.setState()` 则是动态更新的关键。
+我们用服务器获取的新数据替换老的评论数组，界面自己就会自动的更新。
+正因为这种响应特性，只需一丁点改变就能实现实时更新。
+我们这里使用方便的轮询，你也可以很容易替换成 WebSockets 或者其它技术。
 
 ```javascript{3,15,20-21,35}
 // tutorial14.js
@@ -495,11 +532,15 @@ ReactDOM.render(
 
 ```
 
-All we have done here is move the AJAX call to a separate method and call it when the component is first loaded and every 2 seconds after that. Try running this in your browser and changing the `comments.json` file (in the same directory as your server); within 2 seconds, the changes will show!
+这一步做的事情，就是把 AJAX 调用放到一个单独方法里，然后当组件第一次加载后，每两秒调用一次这个方法。
+试着在浏览器运行，然后修改 `comments.json` 文件（在跟目录下），两秒内就能在界面看到你的改变了。
 
-### Adding new comments
+### 添加评论
 
-Now it's time to build the form. Our `CommentForm` component should ask the user for their name and comment text and send a request to the server to save the comment.
+
+现在就得创建表单了。
+我们的 `CommentForm` 组件得知道用户的名字和他们的评论内容，
+然后发送一个请求后台保存这个评论。
 
 ```javascript{5-9}
 // tutorial15.js
@@ -516,11 +557,17 @@ var CommentForm = React.createClass({
 });
 ```
 
-#### Controlled components
+#### 受控组件
 
-With the traditional DOM, `input` elements are rendered and the browser manages the state (its rendered value). As a result, the state of the actual DOM will differ from that of the component. This is not ideal as the state of the view will differ from that of the component. In React, components should always represent the state of the view and not only at the point of initialization.
-
-Hence, we will be using `this.state` to save the user's input as it is entered. We define an initial `state` with two properties `author` and `text` and set them to be empty strings. In our `<input>` elements, we set the `value` prop to reflect the `state` of the component and attach `onChange` handlers to them. These `<input>` elements with a `value` set are called controlled components. Read more about controlled components on the [Forms article](/react/docs/forms.html#controlled-components).
+在传统的 DOM 环境里，`input` 元素被选染的，并且浏览器负责管理它的状态（它渲染的值）的。
+结果就是，DOM 的状态跟组件的状态不一致，视图的状态跟组件的不一样呀，这当然不是我们想要的。
+在 React 里，组件的状态，跟视图的状态，应该一直保持一致，而不仅仅在初始化的时候。
+因此，我们使用 `this.state` 来保存用户的输入。
+我们定义初始 `state` 有两个成员 `author` 和 `text`，初始化为空字符串。
+在我们的 `<input>` 元素里，设置 `value` 属性，反映组件的 `state`，然后给它关联
+`onChange` 事件处理器。
+这类被设置了 `value` 的 `<input>` 元素，我们称之为受控组件。
+查看文章 [表单](/react/docs/forms.html#controlled-components) 了解更多关于受控组件的知识。
 
 ```javascript{3-11,15-26}
 // tutorial16.js
@@ -556,15 +603,24 @@ var CommentForm = React.createClass({
 });
 ```
 
-#### Events
+#### 事件
 
-React attaches event handlers to components using a camelCase naming convention. We attach `onChange` handlers to the two `<input>` elements. Now, as the user enters text into the `<input>` fields, the attached `onChange` callbacks are fired and the `state` of the component is modified. Subsequently, the rendered value of the `input` element will be updated to reflect the current component `state`.
+React 注册事件处理器时，使用驼峰风格来命名事件。
+我们给两个 `input` 元素注册了 `onChange` 事件处理器。
+现在，当用户在 `<input>` 输入内容，关联的 `onChange` 回调方法就会执行，
+接着，组件的 `state` 就会被修改。
+随后，`input` 元素的渲染值会被更新以反映当前组件的 `state`。
 
-(The astute reader may be surprised that these event handlers work as described, given that the method references are not explicitly bound to `this`. `React.createClass(...)` [automatically binds](/react/docs/interactivity-and-dynamic-uis.html#under-the-hood-autobinding-and-event-delegation) each method to its component instance, obviating the need for explicit binding.)
 
-#### Submitting the form
+（读者可能觉得很意外，事件处理器怎么就按照预期的执行了呢，毕竟这些方法引用没有明确的绑定到 `this` 上。
+其实，`React.createClass(...)` 会 [自动绑定](/react/docs/interactivity-and-dynamic-uis.html#under-the-hood-autobinding-and-event-delegation)
+每个方法到它的实例, 避免手动绑定.）
 
-Let's make the form interactive. When the user submits the form, we should clear it, submit a request to the server, and refresh the list of comments. To start, let's listen for the form's submit event and clear it.
+#### 提交表单
+
+我们来实现表单的交互，当用户提交表单时，我们应该清空表单，然后提交一个请求到后台，
+然后刷新评论列表。
+首先，监听表单的 submit 事件然后清空表单：
 
 ```javascript{12-21,24}
 // tutorial17.js
@@ -610,15 +666,20 @@ var CommentForm = React.createClass({
 });
 ```
 
-We attach an `onSubmit` handler to the form that clears the form fields when the form is submitted with valid input.
+我们给表单关联了 `onSubmit` 处理器，当合法提交时清空表单字段。
 
-Call `preventDefault()` on the event to prevent the browser's default action of submitting the form.
+在事件处理器调用 `preventDefault()` 用来禁止浏览器默认的表单提交。
 
-#### Callbacks as props
+#### 回调方法作为属性
 
-When a user submits a comment, we will need to refresh the list of comments to include the new one. It makes sense to do all of this logic in `CommentBox` since `CommentBox` owns the state that represents the list of comments.
+当用户提交一个评论时，，我们需要刷新评论列表然后包含这个新的评论。
+我们觉得在 `CommentBox` 里面实现这个逻辑比较靠谱，因为 `CommentBox` 拥有这些 state，
+而这些 state 就代表着评论列表呀。
 
-We need to pass data from the child component back up to its parent. We do this in our parent's `render` method by passing a new callback (`handleCommentSubmit`) into the child, binding it to the child's `onCommentSubmit` event. Whenever the event is triggered, the callback will be invoked:
+我们得把数据从子组件传回给父组件，为了实现这事，
+我们在父组件的 `render` 方法里给子组件传入一个回调（`handleCommentSubmit`），
+把这个回调绑定到子组件的 `onCommentSubmit` 事件。
+每当事件触发，这个回调就会被调用了：
 
 ```javascript{16-18,31}
 // tutorial18.js
@@ -658,7 +719,8 @@ var CommentBox = React.createClass({
 });
 ```
 
-Now that `CommentBox` has made the callback available to `CommentForm` via the `onCommentSubmit` prop, the `CommentForm` can call the callback when the user submits the form:
+现在 `CommentBox` 通过 `onCommentSubmit` 属性就能让 `CommentForm` 使用回调了。
+当用户提交表单时，`CommentForm` 可以调用回调。
 
 ```javascript{19}
 // tutorial19.js
@@ -704,7 +766,7 @@ var CommentForm = React.createClass({
 });
 ```
 
-Now that the callbacks are in place, all we have to do is submit to the server and refresh the list:
+现在回调也弄好了，我们要做的就是提交到服务器，然后刷新列表:
 
 ```javascript{17-28}
 // tutorial20.js
@@ -755,9 +817,10 @@ var CommentBox = React.createClass({
 });
 ```
 
-### Optimization: optimistic updates
+### 优化: 乐观地更新
 
-Our application is now feature complete but it feels slow to have to wait for the request to complete before your comment appears in the list. We can optimistically add this comment to the list to make the app feel faster.
+我们的应用功能已经完成了，但是感觉有点不爽，因为要等待保存的请求完成之后，评论才能出现在列表中。
+其实我们可以非常愉快乐观地，不管后台保存成功没，直接把评论添加到列表中，让体验更快。
 
 ```javascript{17-23,33}
 // tutorial21.js
@@ -777,9 +840,8 @@ var CommentBox = React.createClass({
   },
   handleCommentSubmit: function(comment) {
     var comments = this.state.data;
-    // Optimistically set an id on the new comment. It will be replaced by an
-    // id generated by the server. In a production application you would likely
-    // not use Date.now() for this and would have a more robust system in place.
+    // 乐观地给新评论设置一个 id，以后也会被服务器生成的 id 替换。
+    // 在生产环境中，最好别用 Date.now() 来生成 id，得用更强壮靠谱的方式。
     comment.id = Date.now();
     var newComments = comments.concat([comment]);
     this.setState({data: newComments});
@@ -816,6 +878,8 @@ var CommentBox = React.createClass({
 });
 ```
 
-### Congrats!
+### 不错哟!
 
-You have just built a comment box in a few simple steps. Learn more about [why to use React](/react/docs/why-react.html), or dive into the [API reference](/react/docs/top-level-api.html) and start hacking! Good luck!
+你刚通过几个简单的步骤就构建了一个评论框。
+学习更多关于 [为啥要用 React](/react/docs/why-react.html)，
+或者入坑 [API 指南](/react/docs/top-level-api.html) 开始撸码！祝你好运！
