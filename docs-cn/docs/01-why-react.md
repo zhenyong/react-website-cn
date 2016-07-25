@@ -1,29 +1,36 @@
 ---
 id: why-react
-title: Why React?
+title: 为啥要用 React？
 permalink: docs/why-react.html
 next: displaying-data.html
 ---
-React is a JavaScript library for creating user interfaces by Facebook and Instagram. Many people choose to think of React as the **V** in **[MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)**.
+React 是一个 js 库，在 Facebook 和 Instagram 用于创建用户交互界面。
+很多人把 React 认为是 **[MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)** 中的 **V** 层。
 
-We built React to solve one problem: **building large applications with data that changes over time**.
+我们造 React 是为了解决一个问题：**构建数据动态变化的大型应用**
 
-## Simple
+## 简单
+
+只是简单地给出某一时刻（状态）你的程序长什么样，
+当底层数据改变时，React 会自动管理所有 UI 的更新
 
 Simply express how your app should look at any given point in time, and React will automatically manage all UI updates when your underlying data changes.
 
-## Declarative
+## 声明式
 
-When the data changes, React conceptually hits the "refresh" button, and knows to only update the changed parts.
+当数据发生变化，React 就像点了 "刷新" 按钮一样，并且知道如何只更新变化的部分。
 
-## Build Composable Components
+## 构建组合组件
 
-React is all about building reusable components. In fact, with React the *only* thing you do is build components. Since they're so encapsulated, components make code reuse, testing, and separation of concerns easy.
+React 的一切都是关于构建可复用的组件。事实上，使用 React **唯一** 要做的就是构建组件。
+又因为组件封装得好，代码就可重用、可测试并且容易解耦。
 
-## Give It Five Minutes
+## 给它五分钟
 
-React challenges a lot of conventional wisdom, and at first glance some of the ideas may seem crazy. [Give it five minutes](https://signalvnoise.com/posts/3124-give-it-five-minutes) while reading this guide; those crazy ideas have worked for building thousands of components both inside and outside of Facebook and Instagram.
+React 克服了很多传统思维，你最开始看到它的一些想法可能会觉得很夸张。阅读 [给花5分钟](https://signalvnoise.com/posts/3124-give-it-five-minutes)，当你在读的时候，这些很夸张的想法
+却已经构建了上千个组件了，不仅包括 Facebook 和 Instagram 的。
 
-## Learn More
+## 学习更多
 
-You can learn more about our motivations behind building React in [this blog post](/react/blog/2013/06/05/why-react.html).
+可以阅读 [this blog post](/react/blog/2013/06/05/why-react.html) 了解我们
+造 React 背后的原因.

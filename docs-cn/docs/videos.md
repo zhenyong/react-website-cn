@@ -1,6 +1,6 @@
 ---
 id: videos
-title: Videos
+title: 视频
 permalink: docs/videos.html
 prev: conferences.html
 next: complementary-tools.html

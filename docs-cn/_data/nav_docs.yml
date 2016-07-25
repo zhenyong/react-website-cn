@@ -5,23 +5,23 @@
   - id: tutorial
     title: 教程
   - id: thinking-in-react
-    title: Thinking in React
-- title: Community Resources
+    title: React 编程思想
+- title: 社区资源
   items:
   - id: conferences
-    title: Conferences
+    title: 会议
   - id: videos
-    title: Videos
+    title: 视频
   - id: complementary-tools
-    title: Complementary Tools
+    title: 配套工具
     href: https://github.com/facebook/react/wiki/Complementary-Tools
   - id: examples
-    title: Examples
+    title: 例子
     href: https://github.com/facebook/react/wiki/Examples
-- title: Guides
+- title: 指南
   items:
   - id: why-react
-    title: Why React?
+    title: 为啥要用 React？
   - id: displaying-data
     title: Displaying Data
     subitems:

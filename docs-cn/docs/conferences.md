@@ -1,6 +1,6 @@
 ---
 id: conferences
-title: Conferences
+title: 会议
 permalink: docs/conferences.html
 prev: thinking-in-react.html
 next: videos.html
